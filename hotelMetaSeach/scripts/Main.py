@@ -92,7 +92,7 @@ def search(search,checkinyear,checkinmonth,checkinday,checkoutyear,checkoutmonth
                     imageUrl = arrayOfDicArray[e][el]['imageUrl']
                 price.append(arrayOfDicArray[e][el]['price'])
                 origin.append(arrayOfDicArray[e][el]['origin'])
-         
+
 
         DataDic = {
             "title": title,

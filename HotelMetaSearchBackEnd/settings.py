@@ -25,7 +25,7 @@ SECRET_KEY = '0(18g*ogc=uk6m(^uh9p&v-q%_2_#xyyh)+#mzj_#b94rud92i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['157.230.42.223']
+ALLOWED_HOSTS = ['157.230.42.223','127.0.0.1']
 
 
 # Application definition
@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'HotelMetaSearchBackEnd.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbhotelmetasearch',
+        'USER': 'dbguom',
+        'PASSWORD': 'dbguom',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
 
 
 # Password validation

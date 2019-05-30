@@ -1,122 +1,42 @@
 
-import QueryGenerator as qg
-import Scraping.Scraper_Hotels as sHotelsCom
-import Scraping.Scraper_Booking as sBookingCom
-import Scraping.Scraper_GetaRoom as sGetaroomCom
-import json
-from fuzzywuzzy import process
+import QueryGenerator as qg                     ## Query Generator for generating  search queries for search engines
+import Scraping.Scraper_Hotels as sHotelsCom    ## WebScraper for Scrping Hotels.com
+import Scraping.Scraper_Booking as sBookingCom  ## WebScraper for Scrping Bookings.com
+import Scraping.Scraper_GetaRoom as sGetaroomCom## WebScraper for Scrping GetaRoom.com
+import json                                     ## JSON for converting response
+import Matcher as HotelMatcher                  ## Hotel Matcher for finding similar hotels and compare
 
 def search(search,checkinyear,checkinmonth,checkinday,checkoutyear,checkoutmonth,checkoutday,rooms,adults,children):
 
     # Getting search urls using QueryGenerator
-    
+
+    #Hotels.com search query - this is the url used to get data from hotels.com website
     HotelsComUrl = qg.getHotelscomLink(search,checkinyear,checkinmonth,checkinday,checkoutyear,checkoutmonth,checkoutday,rooms,adults,children)
 
+    ## WebScraper for Scrping Booking.com - this is the url used to get data from booking.com website
     BookingComUrl = qg.getBookingcomLink(search,checkinyear,checkinmonth,checkinday,checkoutyear,checkoutmonth,checkoutday,rooms,adults,children)
 
+    ## WebScraper for Scrping Getaroom.com - this is the url used to get data from getaroom.com website
     GetaRoomUrl = qg.getGetaroomcomLink(search,checkinyear,checkinmonth,checkinday,checkoutyear,checkoutmonth,checkoutday,rooms,adults,children)
+
     # Scraping and collecting hotel data
 
-    HotelsComArr = sHotelsCom.Scrape(HotelsComUrl)
-    BookingComArr = sBookingCom.Scrape(BookingComUrl)
-    GetaroomComArr = sGetaroomCom.Scrape(GetaRoomUrl)
+    HotelsComArr = sHotelsCom.Scrape(HotelsComUrl)      ## Scraping hotels.com search result and  get results array
+    BookingComArr = sBookingCom.Scrape(BookingComUrl)   ## Scraping booking.com search result and  get results array
+    GetaroomComArr = sGetaroomCom.Scrape(GetaRoomUrl)   ## Scraping getaroom.com search result and  get results array
 
-    # Combinig results
+    # Combinig results - Adding all results from multiple search engine to one array before matching process
+    arrayOfDicArray = [[],[],[]]
+    arrayOfDicArray[0]=(HotelsComArr)
+    arrayOfDicArray[1]=(BookingComArr)
+    arrayOfDicArray[2]=(GetaroomComArr)
 
-    CombinedResults = HotelsComArr + BookingComArr + GetaroomComArr
+    # Comparing hotels
+    FinalArray = HotelMatcher.Match(arrayOfDicArray)    # Sending combined results array to Macher to match simmiler hotels for comparing purpose.
 
-    # Execute Filtering and Ranking 
-    #TODO
-    FinalResults = CombinedResults
-    arrayOfDicArray = []
-    arrayOfDicArray.append(HotelsComArr)
-    arrayOfDicArray.append(BookingComArr)
-    arrayOfDicArray.append(GetaroomComArr)
+    #return arrayOfDicArray
+    return json.dumps(FinalArray)                       #Convert final result to JSON and return
 
-    arrayOfDicArray.sort(key=len, reverse=True)
-
-    TitleArray = []
-    for dicArray in arrayOfDicArray:
-        TitleArray.append([d['title'] for d in dicArray])
-    # TitleArray=[['a','b','c'],['d','e','f'],['a','d','t'],['k','l','t']]
-    res = ''
-
-    indexArr = []
-
-    nameArray = []
-    nameIndexArray = []
-
-    for i in range(len(TitleArray) - 1):
-        for r in range(i + 1, len(TitleArray)):
-            for k in range(len(TitleArray[i])):
-                title = TitleArray[i][k]
-                ans = (process.extractOne(title, TitleArray[r]))
-                if (ans[1] > 89):
-                    res += title + " ==>  " + ans[0] + "\n"
-
-                    if ((title in nameArray) or (ans[0] in nameArray)):
-                        if (title in nameArray):
-                            indx = nameArray.index(title)
-                        if (ans[0] in nameArray):
-                            indx = nameArray.index(ans[0])
-                        indArr = nameIndexArray[indx]
-                        indArr[i] = k
-                        indArr[r] = TitleArray[r].index(ans[0])
-                        nameIndexArray[indx] = indArr
-
-                    else:
-                        nameArray.append(title)
-                        indArr = ['x'] * len(TitleArray)
-                        indArr[i] = k
-                        indArr[r] = TitleArray[r].index(ans[0])
-                        nameIndexArray.append(indArr)
-
-    MultiDicArray = []
-
-    for arr in nameIndexArray:
-        title = ''
-        link = []
-        address = ''
-        imageUrl = ''
-        price = []
-        origin = []
-        for e in range(len(arr)):
-            el = arr[e]
-            if (el != 'x'):
-                if (title == ''):
-                    title = arrayOfDicArray[e][el]['title']
-                link.append(arrayOfDicArray[e][el]['link'])
-                if (address == ''):
-                    address = arrayOfDicArray[e][el]['address']
-                if (imageUrl == ''):
-                    imageUrl = arrayOfDicArray[e][el]['imageUrl']
-                price.append(arrayOfDicArray[e][el]['price'])
-                origin.append(arrayOfDicArray[e][el]['origin'])
-
-
-        DataDic = {
-            "title": title,
-            "link": link,
-            "address": address,
-            "imageUrl": imageUrl,
-            "price": price,
-            "origin": origin
-        }
-        MultiDicArray.append(DataDic)
-
-    FinalArray = []
-    FinalArray += MultiDicArray
-    for darr in arrayOfDicArray:
-        FinalArray += darr
-
-
-
-    #Return Final Results
-    #return json.dumps(FinalResults)
-    return json.dumps(FinalArray)
-
-
-#search('Kandy','2019','03','15','2019','03','25','2','2','2')
 
 
     

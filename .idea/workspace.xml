@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1644182c-b483-4b5b-83be-c26f58d5910a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/Matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,22 +20,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="63" column="13" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="63" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+            <state relative-caret-position="17">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -36,29 +31,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state>
               <folding>
-                <element signature="e#1#28#0" expanded="true" />
+                <element signature="e#1#117#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py">
+        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Matcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="-294">
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py">
+        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="1175">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -67,10 +61,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py">
+        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+            <state relative-caret-position="170">
+              <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="54" column="29" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="54" selection-end-column="29" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -97,12 +103,13 @@
         <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Travelocity.py" />
         <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Expedia.py" />
         <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Kayak.py" />
+        <option value="$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py" />
+        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py" />
+        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py" />
+        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py" />
         <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py" />
         <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py" />
-        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py" />
-        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py" />
-        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py" />
-        <option value="$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py" />
+        <option value="$PROJECT_DIR$/hotelMetaSeach/scripts/Matcher.py" />
       </list>
     </option>
   </component>
@@ -136,13 +143,6 @@
               <item name="HotelMetaSearchBackEnd" type="462c0819:PsiDirectoryNode" />
               <item name="hotelMetaSeach" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMetaSearchBackEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMetaSearchBackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="hotelMetaSeach" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="Scraping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HotelMetaSearchBackEnd" type="b2602c69:ProjectViewProjectNode" />
@@ -314,9 +314,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Scraper_Hotels" />
         <item itemvalue="Python.Scraper_GetaRoom" />
         <item itemvalue="Python.QueryGenerator" />
-        <item itemvalue="Python.Scraper_Hotels" />
         <item itemvalue="Python.Scraper_Booking" />
         <item itemvalue="Python.Scraper_Kayak" />
       </list>
@@ -332,29 +332,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558777576647</updated>
-      <workItem from="1558777588063" duration="32706000" />
+      <workItem from="1558777588063" duration="47820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32706000" />
+    <option name="totallyTimeSpent" value="47820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.32526475" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.32526475" side_tool="true" visible="true" weight="0.17021276" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.67473525" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67473525" weight="0.17021276" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,7 +373,7 @@
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_GetaRoom.coverage" NAME="Scraper_GetaRoom Coverage Results" MODIFIED="1558887089059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_HomeAway.coverage" NAME="Scraper_HomeAway Coverage Results" MODIFIED="1558852575877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$QueryGenerator.coverage" NAME="QueryGenerator Coverage Results" MODIFIED="1558883413049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts" />
-    <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_Hotels.coverage" NAME="Scraper_Hotels Coverage Results" MODIFIED="1558875794605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
+    <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_Hotels.coverage" NAME="Scraper_Hotels Coverage Results" MODIFIED="1558967889493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_Travelocity.coverage" NAME="Scraper_Travelocity Coverage Results" MODIFIED="1558857799744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_Booking.coverage" NAME="Scraper_Booking Coverage Results" MODIFIED="1558874543127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
     <SUITE FILE_PATH="coverage/HotelMetaSearchBackEnd$Scraper_Kayak.coverage" NAME="Scraper_Kayak Coverage Results" MODIFIED="1558871292189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping" />
@@ -423,20 +423,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py">
+    <entry file="file://$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="269">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Hotels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="289">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -445,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_Booking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        <state relative-caret-position="1175">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -455,25 +462,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/QueryGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+        <state relative-caret-position="17">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Scraping/Scraper_GetaRoom.py">
+    <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="63" column="13" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="63" selection-end-column="13" />
+        <state>
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#1#117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HotelMetaSearchBackEnd/settings.py">
+    <entry file="file://$PROJECT_DIR$/hotelMetaSeach/scripts/Matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        <state relative-caret-position="-294">
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
